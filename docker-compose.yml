@@ -10,3 +10,6 @@ services:
     - /dev/virtio-ports/ovirt-guest-agent.0:/dev/virtio-ports/ovirt-guest-agent.0
     - /dev/virtio-ports/org.qemu.guest_agent.0:/dev/virtio-ports/org.qemu.guest_agent.0
     tty: true
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
