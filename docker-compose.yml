@@ -13,4 +13,4 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
-      io.rancher.os.scope=system #force docker container to run under system-docker daemon
+      io.rancher.os.scope: system
