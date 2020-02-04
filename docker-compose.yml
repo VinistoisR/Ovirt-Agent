@@ -1,6 +1,6 @@
 guest-agent:
   privileged: true
-  image: albinodrought/ovirt-guest-agent-centos
+  image: albinodrought/ovirt-guest-agent-centos:latest
   restart: always
   stdin_open: true
   pid: host
