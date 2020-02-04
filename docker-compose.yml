@@ -1,7 +1,9 @@
 guest-agent:
-  privileged: true
   image: albinodrought/ovirt-guest-agent-centos:latest
-  restart: always
+  privileged: true
+  labels:
+    io.rancher.os.scope: system
+    io.rancher.os.after: console
   stdin_open: true
   pid: host
   ipc: host
@@ -9,7 +11,4 @@ guest-agent:
   uts: host
   volumes:
     - /dev/virtio-ports:/dev/virtio-ports
-  tty: true
-  labels:
-    io.rancher.os.scope: system
-    io.rancher.os.after: console
+  restart: always
