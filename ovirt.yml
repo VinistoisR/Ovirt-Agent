@@ -1,4 +1,3 @@
-  
 guest-agent:
   image: albinodrought/ovirt-guest-agent-centos:latest
   privileged: true
